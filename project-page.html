@@ -473,34 +473,63 @@
               </section>
 
               <section>
-                  <h2>RACI Matrix</h2>
-                  <table>
-                      <thead>
-                          <tr>
-                              <th>Task</th>
-                              <th>Responsible</th>
-                              <th>Accountable</th>
-                              <th>Consulted</th>
-                              <th>Informed</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>Model Development</td>
-                              <td>Data Scientist</td>
-                              <td>Project Manager</td>
-                              <td>IT Staff</td>
-                              <td>Senior Management</td>
-                          </tr>
-                          <tr>
-                              <td>Staff Training</td>
-                              <td>Training Lead</td>
-                              <td>Project Manager</td>
-                              <td>IT Support</td>
-                              <td>Employees</td>
-                          </tr>
-                      </tbody>
-                  </table>
+                <h2>RACI Matrix</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Responsible</th>
+                            <th>Accountable</th>
+                            <th>Consulted</th>
+                            <th>Informed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Model Development</strong></td>
+                            <td>Data Scientist</td>
+                            <td>Project Manager</td>
+                            <td>IT Staff, Data Analytics Team</td>
+                            <td>Senior Management, Network Operations Team</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Collection and Preparation</strong></td>
+                            <td>Data Engineer</td>
+                            <td>Project Manager</td>
+                            <td>IT Staff, Network Operations Team</td>
+                            <td>Senior Management</td>
+                        </tr>
+                        <tr>
+                            <td><strong>System Integration</strong></td>
+                            <td>System Integration Specialist</td>
+                            <td>Project Manager</td>
+                            <td>IT Infrastructure Team, Software Developers</td>
+                            <td>Senior Management, Network Operations Team</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Staff Training</strong></td>
+                            <td>Training Lead</td>
+                            <td>Project Manager</td>
+                            <td>IT Support, HR Team</td>
+                            <td>Employees, Senior Management</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monitoring and Refinement</strong></td>
+                            <td>Data Scientist</td>
+                            <td>Project Manager</td>
+                            <td>IT Infrastructure Team, Network Operations Team</td>
+                            <td>Senior Management</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Risk Management and Mitigation</strong></td>
+                            <td>Risk Manager</td>
+                            <td>Project Manager</td>
+                            <td>Data Scientist, IT Staff</td>
+                            <td>Senior Management</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
 
                   <h2>Communication Plan</h2>
                   <ul>
@@ -583,10 +612,46 @@
                   </table>
 
                   <h2>Early Warning Indicators</h2>
-                  <ul>
-                      <li>Anomalies in data trends.</li>
-                      <li>Delays in model training and testing.</li>
-                  </ul>
+<ul>
+    <li>
+        <strong>Anomalies in Data Trends:</strong>
+        <ul>
+            <li><strong>Definition:</strong> Anomalies refer to unexpected patterns or deviations in network performance data that fall outside the normal operational range. These could include sudden spikes in latency, drops in bandwidth usage, or increased error rates in specific network components.</li>
+            <li><strong>Potential Causes:</strong>
+                <ul>
+                    <li><strong>Data Quality Issues:</strong> Missing, incomplete, or corrupted data may lead to inaccurate trend detection.</li>
+                    <li><strong>System Malfunctions:</strong> Faulty sensors or logging mechanisms might produce erroneous data points.</li>
+                    <li><strong>Environmental Factors:</strong> External factors like weather conditions or power outages could influence network behavior, causing anomalies.</li>
+                </ul>
+            </li>
+            <li><strong>Impact:</strong> Failing to address anomalies can result in delayed detection of network failures, leading to unplanned downtimes and decreased customer satisfaction.</li>
+            <li><strong>Mitigation:</strong> Implement automated anomaly detection mechanisms to flag irregularities in real-time. Use statistical techniques or machine learning models like Isolation Forest or DBSCAN for early identification.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Delays in Model Training and Testing:</strong>
+        <ul>
+            <li><strong>Definition:</strong> Delays in the development process, particularly during the training and testing phases of the predictive analytics model, can hinder project timelines and reduce system readiness for deployment.</li>
+            <li><strong>Potential Causes:</strong>
+                <ul>
+                    <li><strong>Data Challenges:</strong> Insufficient or poor-quality historical data can slow down preprocessing and feature engineering.</li>
+                    <li><strong>Resource Constraints:</strong> Limited computational resources, such as insufficient processing power or memory, may extend the time required for training models.</li>
+                    <li><strong>Algorithmic Issues:</strong> Overfitting, underfitting, or difficulty in achieving convergence during training can require additional iterations and debugging.</li>
+                    <li><strong>Team Availability:</strong> Unavailability of key personnel, such as data scientists or IT staff, can impede progress.</li>
+                </ul>
+            </li>
+            <li><strong>Impact:</strong> Prolonged timelines can affect project deliverables, stakeholder confidence, and the ability to meet operational deadlines. This can also delay the resolution of current network challenges.</li>
+            <li><strong>Mitigation:</strong>
+                <ul>
+                    <li>Use scalable cloud-based solutions to accelerate training with high-performance computing resources.</li>
+                    <li>Conduct regular progress reviews and establish checkpoints to identify and resolve bottlenecks promptly.</li>
+                    <li>Allocate additional team members or resources during critical phases to maintain momentum.</li>
+                    <li>Focus on incremental model development, starting with simple algorithms before progressing to more complex solutions.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 
 
                   <section>
