@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Consolution - Styled Internally</title>
+    <title>Consolution - Styled and Responsive</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -116,22 +116,31 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
         overflow: hidden;
+        transition: transform 0.3s;
+      }
+      .blog-entry:hover {
+        transform: translateY(-5px);
       }
       .blog-entry iframe {
-        width: 100%;
-        height: 200px;
+        width: 95%;
+        height: 150px;
         border: none;
+        margin: 10px auto;
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
       .blog-entry .text {
-        padding: 20px;
+        padding: 15px;
         text-align: center;
       }
       .blog-entry .text h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #007bff;
       }
       .blog-entry .text p {
-        font-size: 14px;
+        font-size: 13px;
         color: #666;
       }
 
@@ -148,6 +157,20 @@
       }
       footer a:hover {
         text-decoration: underline;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .topper .container {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .hero-wrap h1 {
+          font-size: 28px;
+        }
+        .blog-entry iframe {
+          height: 120px;
+        }
       }
     </style>
   </head>
