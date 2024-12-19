@@ -432,47 +432,53 @@
                   <p>The hypothesis is that analyzing historical network data will reveal patterns that predict
                       failures, enabling proactive resolution.</p>
 
-                  <h3>Fact and Dimension Tables</h3>
-                  <table>
-                      <thead>
-                          <tr>
-                              <th>Type</th>
-                              <th>Description</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td><b>Fact Table</b></td>
-                              <td>Contains network failure metrics.</td>
-                          </tr>
-                          <tr>
-                              <td><b>Dimension Tables</b></td>
-                              <td>Categorizes data by time, location, and equipment type.</td>
-                          </tr>
-                      </tbody>
-                  </table>
-
-                  <h2>Key Assumptions, Constraints & Dependencies</h2>
-                  <h3>Assumptions</h3>
-                  <ul>
-                      <li>Historical data is complete and accurate.</li>
-                      <li>Staff availability for training and system adoption is ensured.</li>
-                  </ul>
-
-                  <h3>Constraints</h3>
-                  <ul>
-                      <li>Budget limitations could restrict advanced iterations of the model.</li>
-                      <li>Limited IT staff availability may impact project timelines.</li>
-                  </ul>
-
-                  <h3>Dependencies</h3>
-                  <ul>
-                      <li>Access to historical data for model training.</li>
-                      <li>Collaboration between IT and data analytics teams.</li>
-                  </ul>
-              </section>
-
-              <section>
+                      <h2>Fact and Dimension Tables</h2>
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Type</th>
+                                  <th>Description</th>
+                                  <th>Example Data</th>
+                                  <th>Purpose</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><strong>Fact Table</strong></td>
+                                  <td>Stores measurable metrics related to network performance and failures, including counts and durations of outages, error rates, and downtime events.</td>
+                                  <td>
+                                      <ul>
+                                          <li><strong>Metrics:</strong> Total downtime (in minutes), number of failures, error rates per hour.</li>
+                                          <li><strong>Aggregations:</strong> Monthly average failure rate, total downtime per region.</li>
+                                      </ul>
+                                  </td>
+                                  <td>
+                                      <ul>
+                                          <li>Facilitates performance analysis and KPI tracking.</li>
+                                          <li>Supports trend identification for predictive modeling.</li>
+                                      </ul>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><strong>Dimension Tables</strong></td>
+                                  <td>Provides descriptive attributes to categorize and filter data in the fact table, aiding in deeper analysis and reporting.</td>
+                                  <td>
+                                      <ul>
+                                          <li><strong>Time Dimension:</strong> Date, time, day of the week, week of the year, quarter.</li>
+                                          <li><strong>Location Dimension:</strong> Region, city, network segment.</li>
+                                          <li><strong>Equipment Type Dimension:</strong> Router, switch, server, data center.</li>
+                                      </ul>
+                                  </td>
+                                  <td>
+                                      <ul>
+                                          <li>Enables slicing and dicing of data for targeted analysis.</li>
+                                          <li>Helps identify patterns based on time, geography, or equipment type.</li>
+                                      </ul>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      
                 <h2>RACI Matrix</h2>
                 <table>
                     <thead>
