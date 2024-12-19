@@ -137,6 +137,21 @@
             background-color: #0056b3;
         }
 
+        .contact-info-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info-row .info {
+            flex: 1;
+            padding: 10px;
+        }
+        .contact-info-row .info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
         footer {
             background-color: #343a40;
             color: #fff;
@@ -167,7 +182,7 @@
 <body>
     <div class="bg-top topper">
         <div class="container">
-            <a href="index.html" class="navbar-brand">University of Hertfordshire</a>
+            <a href="index.html" class="navbar-brand"></a>
             <div class="contact-info">
                 <span>Email: student@herts.ac.uk</span>
                 <span>Call Us: +44 1707 284000</span>
@@ -177,12 +192,12 @@
     </div>
 
     <nav class="navbar">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="links.html" class="nav-link">Useful Links</a>
-        <a href="videos.html" class="nav-link">Recommended Videos</a>
-        <a href="images.html" class="nav-link">Image Gallery</a>
-        <a href="project-page.html" class="nav-link">Client Project</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="links.html" class="nav-link">USEFUL LINKS</a>
+        <a href="videos.html" class="nav-link">RECOMMENDED VIDEOS</a>
+        <a href="images.html" class="nav-link">IMAGE GALLERY</a>
+        <a href="project-page.html" class="nav-link">CLIENT PROJECT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
     </nav>
 
     <section class="hero-wrap" style="background-image: url('images/contact_bg.jpg');">
@@ -192,6 +207,22 @@
 
     <section class="contact-section">
         <h2>If you have any questions, feel free to send us a message</h2>
+
+        <div class="contact-info-row">
+            <div class="info">
+                <h3>Address</h3>
+                <p>Postcode: AL10 9AB<br>University of Hertfordshire</p>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p>+44 1707 284000</p>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p>student@herts.ac.uk</p>
+            </div>
+        </div>
+
         <form action="#" class="contact-form">
             <div class="form-group">
                 <label for="name">Your Name</label>
